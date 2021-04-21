@@ -1,0 +1,24 @@
+<div class="navigation-bar">
+  <h1>Todo App</h1>
+</div>
+
+<div class="main-container">
+  <div class="create-todo-container">
+    <input type="text" [(ngModel)]="newTodoText" placeholder="Enter your task..." />
+    <button (click)="handleAddNewTodoClick()">Create a new todo</button>
+  </div>
+  <div class="box-container">
+    <div class="todo-container">
+      Sample todo 1
+    </div>
+    <div class="todo-container">
+      Sample todo 2
+    </div>
+    <div class="todo-container">
+      Sample todo 3
+    </div>
+    <div class="todo-container">
+      Sample todo 4
+    </div>
+  </div>
+</div>
