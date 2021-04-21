@@ -1,0 +1,7 @@
+spring.datasource.url=
+spring.datasource.driverClassName=oracle.jdbc.driver.OracleDriver
+spring.datasource.username=
+spring.datasource.password=
+spring.jpa.database-platform=org.hibernate.dialect.Oracle10gDialect
+server.port=8088
+spring.jpa.hibernate.ddl-auto=update
