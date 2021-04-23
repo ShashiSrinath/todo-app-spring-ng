@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
+@CrossOrigin
+@RestController()
 public class TodoController {
     private final TodoService todoService;
 
