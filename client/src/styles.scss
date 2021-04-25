@@ -4,3 +4,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.btn {
+  border-radius: 15px;
+  color: white;
+  background-color: #145bac;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 5px 15px;
+
+  &:hover {
+    background-color: #2969af;
+  }
+
+  &:active {
+    background-color: #06325c;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

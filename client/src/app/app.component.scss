@@ -31,35 +31,6 @@
   overflow-y: auto;
 }
 
-.todo-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: 0.3s;
-
-  padding: 30px;
-  margin-bottom: 15px;
-  border-radius: 15px;
-  background: purple;
-  color: white;
-
-  svg {
-    &:hover {
-      cursor: pointer;
-
-      path {
-        fill: #b0aab1;
-      }
-    }
-
-    &:active {
-      path {
-        fill: #ffffff;
-      }
-    }
-  }
-}
-
 .create-todo-container {
   display: flex;
   width: 60vw;
@@ -81,23 +52,5 @@
 
   button {
     width: 200px;
-    border-radius: 15px;
-    color: white;
-    background-color: #145bac;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
-
-    &:hover {
-      background-color: #2969af;
-    }
-
-    &:active {
-      background-color: #06325c;
-    }
-
-    &:focus {
-      outline: none;
-    }
   }
 }

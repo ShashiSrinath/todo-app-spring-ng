@@ -1,12 +1,9 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Todo } from './todo-item/todo-item.component';
+import { environment } from '../environments/environment';
 
-const API_PATH = 'http://localhost:8088/api';
-
-type Todo = {
-  id: number;
-  task: string;
-};
+const { API_PATH } = environment;
 
 @Component({
   selector: 'app-root',
@@ -41,15 +38,6 @@ export class AppComponent {
       .subscribe(() => {
         this._refresh();
         this.newTodoText = '';
-      });
-  }
-
-  handleDeleteTodoClick(id: number) {
-    this.http
-      .delete(`${API_PATH}/todos/${id}`)
-      .subscribe((response: { message: string }) => {
-        console.log(response.message);
-        this._refresh();
       });
   }
 }
