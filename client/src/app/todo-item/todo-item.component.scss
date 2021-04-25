@@ -1,0 +1,76 @@
+.todo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+
+  padding: 30px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background: purple;
+  color: white;
+
+  svg {
+    &:hover {
+      cursor: pointer;
+
+      path {
+        fill: #b0aab1;
+      }
+    }
+
+    &:active {
+      path {
+        fill: #ffffff;
+      }
+    }
+  }
+}
+
+.todo-container-editing {
+  background: #b4bcd0;
+}
+
+.todo-action-container {
+  display: flex;
+
+  svg {
+    margin-left: 15px;
+  }
+}
+
+.editing-textarea-container {
+  width: 100%;
+
+  textarea {
+    width: 90%;
+    border-radius: 15px;
+    padding: 20px;
+  }
+}
+
+.btn-save {
+  margin-right: 5px;
+
+  background: #2f5f2a;
+
+  &:hover {
+    background: #75c666;
+  }
+
+  &:active {
+    background: #0d1d09;
+  }
+}
+
+.btn-cancel {
+  background: #d25353;
+
+  &:hover {
+    background: #c97f7f;
+  }
+
+  &:active {
+    background: #cd1c1c;
+  }
+}
