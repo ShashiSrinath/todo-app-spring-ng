@@ -17,7 +17,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .box-container {
@@ -28,15 +27,37 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   transition: 0.3s;
   border-radius: 25px;
+
+  overflow-y: auto;
 }
 
 .todo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+
   padding: 30px;
   margin-bottom: 15px;
   border-radius: 15px;
   background: purple;
   color: white;
 
+  svg {
+    &:hover {
+      cursor: pointer;
+
+      path {
+        fill: #b0aab1;
+      }
+    }
+
+    &:active {
+      path {
+        fill: #ffffff;
+      }
+    }
+  }
 }
 
 .create-todo-container {
@@ -78,6 +99,5 @@
     &:focus {
       outline: none;
     }
-
   }
 }

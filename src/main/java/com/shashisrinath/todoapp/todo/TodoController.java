@@ -1,6 +1,7 @@
 package com.shashisrinath.todoapp.todo;
 
 import com.shashisrinath.todoapp.todo.dto.CreateTodoDTO;
+import com.shashisrinath.todoapp.todo.dto.DeleteResponseDTO;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -36,8 +37,9 @@ public class TodoController {
     }
 
     @DeleteMapping("/api/todos/{id}")
-    public String delete(@PathVariable int id) {
+    public DeleteResponseDTO delete(@PathVariable int id) {
         todoService.delete(id);
-        return "todo item deleted successfully";
+        return new DeleteResponseDTO("todo item deleted successfully");
     }
 }
+
